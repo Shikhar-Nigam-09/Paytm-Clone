@@ -45,24 +45,31 @@ function Signin() {
         Access your account securely
       </p>
 
+      <label className="block text-sm font-medium text-gray-700 mb-2">
+        Email <span className="text-red-500">*</span>
+      </label>
       <input
         name="username"
-        placeholder="Email"
+        type="email"
+        placeholder="Enter your email"
         value={form.username}
         onChange={handleChange}
-        className="w-full mb-4 p-3 border rounded-lg
-        focus:outline-none focus:ring-2 focus:ring-blue-600"
+        className="w-full mb-4 p-3 border border-gray-300 rounded-lg bg-white
+        focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
         required
       />
 
+      <label className="block text-sm font-medium text-gray-700 mb-2">
+        Password <span className="text-red-500">*</span>
+      </label>
       <input
         type="password"
         name="password"
-        placeholder="Password"
+        placeholder="Enter your password"
         value={form.password}
         onChange={handleChange}
-        className="w-full mb-6 p-3 border rounded-lg
-        focus:outline-none focus:ring-2 focus:ring-blue-600"
+        className="w-full mb-6 p-3 border border-gray-300 rounded-lg bg-white
+        focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
         required
       />
 

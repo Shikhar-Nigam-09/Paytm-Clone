@@ -31,7 +31,7 @@ function Auth() {
               ${isSignUp ? "opacity-0 pointer-events-none" : "opacity-100"}
             `}
           >
-            <div className="h-full flex flex-col items-center justify-center">
+            <div className="h-full flex flex-col items-center justify-center pt-16">
               {successMessage && (
                 <div className="mb-6 w-[320px] px-4 py-3 rounded-lg
                   bg-green-100 text-green-800 text-sm border border-green-300 text-center">
@@ -48,7 +48,7 @@ function Auth() {
               ${isSignUp ? "opacity-100" : "opacity-0 pointer-events-none"}
             `}
           >
-            <div className="h-full flex flex-col items-center justify-center">
+            <div className="h-full flex flex-col items-center justify-start pt-12 pb-8">
               <Signup onSignupSuccess={handleSignupSuccess} />
             </div>
           </div>
